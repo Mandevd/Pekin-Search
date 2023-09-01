@@ -1,0 +1,76 @@
+<div class="sidebar-wrapper">
+  <div class="sidebar-title-wrapper">
+    <div>
+      <img src="../../assets/logo.png" alt="" style="width: 58px" />
+    </div>
+
+    <ul class="title-list">
+      <li
+        style="
+          color: #a18fff;
+          justify-content: space-around;
+          justify-content: space-between;
+          text-align: center;
+        "
+      >
+        Pekin
+      </li>
+      <li
+        style="
+          color: #ffff;
+          justify-content: space-around;
+          justify-content: space-between;
+          text-align: center;
+        "
+      >
+        Search
+      </li>
+    </ul>
+  </div>
+  <ul style="list-style: none" class="side-menu-fixed">
+    <li class="a1"></li>
+
+    <li>
+      <img
+        class="profile-img"
+        src="../assets/57.png"
+        alt="a"
+        style="width: 90px"
+      />
+      <p class="user-welcome">Welcome back</p>
+      <p class="user-name">Rahul Paul</p>
+    </li>
+
+    <li [routerLink]="['/dashboard/feed']" style="padding-top: 40px">
+      <p>
+        <!-- <img src="../assets/Vector.png" alt="" class="sidebar-list-icon" /> -->
+        <i class="bi bi-house"></i>
+        <span class="sidebar-ele">Home</span>
+      </p>
+    </li>
+
+    <li [routerLink]="['/dashboard/saved']" routerLinkActive="is-active">
+      <p>
+        <!-- <img src="../assets/Vector 2.png" alt="" class="sidebar-list-icon" /> -->
+        <i class="bi bi-bookmark"></i>
+        <span class="sidebar-ele">Saved</span>
+      </p>
+    </li>
+
+    <li [routerLink]="['/dashboard/me']" routerLinkActive="is-active">
+      <p>
+        <!-- <img src="../assets/Vector 3.png" alt="" class="sidebar-list-icon" /> -->
+        <i class="bi bi-person"></i>
+        <span class="sider-ele"> Profile</span>
+      </p>
+    </li>
+
+    <li [routerLink]="['/login']" routerLinkActive="is-active">
+      <p>
+        <!-- <img src="../assets/Vector 4.png" alt="" class="sidebar-list-icon" /> -->
+        <i class="bi bi-box-arrow-left"></i>
+        <span class="sider-ele"> SignOut</span>
+      </p>
+    </li>
+  </ul>
+</div>
